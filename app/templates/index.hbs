@@ -1,5 +1,30 @@
-{{lookup-form nameLookup="nameLookup"}}
-{{outlet}} 
+<!-- {{lookup-form nameLookup="nameLookup"}} {{outlet}} -->
+<div class="output">
+  <h2>Mens clothes</h2>
+  <div class="row">
+    <div class="col col-md-3">
+      {{#each model as |product|}}
+        <li> {{product.id}} {{product.name}}</li>
+        <li> {{product.unbrandedName}} {{product.brandedName}}</li>
+        <li> {{product.currency}} {{product.priceLabel}}</li>
+        <li> {{product.instock}} {{product.stock}}</li>
+        <li><img src="{{product.image.sizes.Best.url}}" alt="" class="image"></li>
+      {{/each}}
+    </div>
+  </div>
+  <h2>Womens Clothes</h2>
+  <div class="row">
+    <div class="col col-md-3">
+      {{#each model as |product|}}
+        <li> {{product.id}} {{product.name}}</li>
+        <li> {{product.unbrandedName}} {{product.brandedName}}</li>
+        <li> {{product.currency}} {{product.priceLabel}}</li>
+        <li> {{product.instock}} {{product.stock}}</li>
+        <li><img src="{{product.image.sizes.Best.url}}" alt="" class="image"></li>
+      {{/each}}
+    </div>
+  </div>
+</div>
 
 
 {{!-- {{lookup-form nameLookup="nameLookup"}} --}}

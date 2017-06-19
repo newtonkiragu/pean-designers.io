@@ -7,12 +7,12 @@ module.exports = function(environment) {
     rootURL: '/',
     locationType: 'auto',
     firebase: {
-        apiKey: "AIzaSyAUxnwfAmlJYVc0MNAMnSQFpw5rCwUw13g",
-        authDomain: "bizna-2888f.firebaseapp.com",
-        databaseURL: "https://bizna-2888f.firebaseio.com",
-        projectId: "bizna-2888f",
-        storageBucket: "bizna-2888f.appspot.com"
-      },
+      apiKey: "AIzaSyAUxnwfAmlJYVc0MNAMnSQFpw5rCwUw13g",
+      authDomain: "bizna-2888f.firebaseapp.com",
+      databaseURL: "https://bizna-2888f.firebaseio.com",
+      projectId: "bizna-2888f",
+      storageBucket: "bizna-2888f.appspot.com"
+    },
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -23,6 +23,14 @@ module.exports = function(environment) {
         Date: false
       }
     },
+    firebase: {
+      apiKey: "AIzaSyA-mcWowRnPIx6pKxK0y5ln_4u35jpS19w",
+      authDomain: "pean-designers.firebaseapp.com",
+      databaseURL: "https://pean-designers.firebaseio.com",
+      projectId: "pean-designers",
+      storageBucket: "pean-designers.appspot.com",
+      messagingSenderId: "487794924020"
+    },
 
     APP: {
       // Here you can pass flags/options to your application instance
@@ -31,8 +39,8 @@ module.exports = function(environment) {
   };
 
   if (environment === 'development') {
-    //load api key 
-       ENV.myApiKey = process.env.apiKey;
+    //load api key
+    ENV.myApiKey = process.env.apiKey;
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
     // ENV.APP.LOG_TRANSITIONS = true;
