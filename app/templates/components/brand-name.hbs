@@ -1,1 +1,7 @@
-{{yield}}
+<div class="container">
+<ul>
+  {{#each model as |brand|}}
+    <li> {{brand.id}} {{brand.name}}</li>
+    {{/each}}
+</ul>
+</div>
