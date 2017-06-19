@@ -1,5 +1,4 @@
 import Ember from 'ember';
-
 export default Ember.Component.extend({
   shoppingCart: Ember.inject.service('shopping-cart'),
 
@@ -12,6 +11,11 @@ export default Ember.Component.extend({
      var removeOneProduct = duplicateShoppingCart.indexOf(item);
      duplicateShoppingCart.splice('removeOneProduct', 1);
      this.set("shoppingCart.items", duplicateShoppingCart);
-   }
- }
+   },
+   click: function(star){
+            this.set('starRating', star.index);
+            this.sendAction('action', star.index);
+        }
+    }
+
 });
