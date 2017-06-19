@@ -15,6 +15,7 @@ Router.map(function() {
   this.route('item', { path: '/:item_id' });
   this.route('store');
   this.route('admin');
+  this.route('checkout-payment');
   
   })
 
