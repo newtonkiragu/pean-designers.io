@@ -6,8 +6,10 @@ export default Ember.Route.extend({
     nameLookup(params) {
       this.transitionTo('results', params.name);
     },
+    model() {
+      return this.store.findAll('product');
+    },
     model: function() {
-      return this.store.findAll('rental');
       var key = config.myApiKey;
       console.log(config.myApiKey);
       var url = 'http://api.shopstyle.com/api/v2/categories?pid=uid8096-39509436-69' + '&fts=trousers&offset=0&limit=10';

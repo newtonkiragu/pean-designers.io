@@ -1,6 +1,14 @@
 <!-- {{lookup-form nameLookup="nameLookup"}} {{outlet}} -->
+<ul>
+  {{#each model as |product|}}
+    {{product-tile product=product}}
+  {{/each}}
+</ul>
+
+
+
 <div class="output">
-  <h2>Mens clothes</h2>
+  <!-- <h2>Mens clothes</h2> -->
   <div class="row">
     <div class="col col-md-3">
       {{#each model as |product|}}
@@ -12,7 +20,7 @@
       {{/each}}
     </div>
   </div>
-  <h2>Womens Clothes</h2>
+  <!-- <h2>Womens Clothes</h2> -->
   <div class="row">
     <div class="col col-md-3">
       {{#each model as |product|}}
