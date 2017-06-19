@@ -1,7 +1,12 @@
-{{product.title}}
-<img class="item-image" src="{{product.image}}"/>
+<ul>
+  {{#each model as |product|}}
+     <li>{{product.name}} is {{product.priceLabel}}. Here is the image{{product.image}}</li>
+  {{/each}}
+</ul>
+
+<!-- <img class="item-image" src="{{product.image}}"/>
 {{product.description}}
 {{product.cost}}
 
 <button {{action 'addToCart' product}}>Add to Cart</button>
-<button {{action 'remove' product}}>Remove from Cart</button>
+<button {{action 'remove' product}}>Remove from Cart</button> -->

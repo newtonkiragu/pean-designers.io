@@ -1,8 +1,9 @@
-
 export default DS.Model.extend({
-    title: DS.attr(),
-    image: DS.attr(),
-    description: DS.attr(),
-    cost: DS.attr('number'),
-    
+  name: DS.attr(),
+  brandedName: DS.attr(),
+  unbrandedName: DS.attr(),
+  currency: DS.attr(),
+  priceLabel: DS.attr('number'),
+  inStock: DS.attr(),
+  image: DS.attr(),
 });
