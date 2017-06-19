@@ -1,79 +1,38 @@
-<html lang="en">
-<head>
-  <title>Desiingerz</title>
-  <meta charset="utf-8"/>
-  <meta name="description" content="Responsive Fixed Nav Bar" />
-  <meta name="keywords" content="Fluid, Responsive, responsive, responsive web design, responsive design, layout, css, html, web development, web design"/>
-  <meta name ="Generator" content= "Atom ver1.0.11.0"/>
-  <meta name="author" content="philip "/>
-  <link rel="stylesheet" href="stylesheet.css"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-</head>
-<body>
-
-  <div id="pagewrap">
-
-    <header id="main">
-      <h1>Desiignerz Club</h1>
-    </header>
-
-    <nav>
-      <ul>
-      	<li class="navbar-header">Desiignerz Club</li>
-        <li ><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">Contacts</a></li>
-      </ul>
-    </nav>
-   {{!--  render templates --}}
-    <div class="container-fluid" style="text-align: center">
-    	
-		{{outlet}}
-    </div>
-	
-    
-  <footer>
-      <p>&copy; philip</p>
-    </footer>
-
+{{!-- <div class="parallax-container">
+    <div class="parallax"><img src="https://static.pexels.com/photos/337259/pexels-photo-337259.jpeg"></div>
   </div>
-
-  <div>
-{{#link-to 'store'}}<img src="../img/logo.png" alt="" />{{/link-to}}
-{{!-- {{#link-to 'admin'}}<h2>Admin</h2>{{/link-to}} --}}
-</div>
-
-
-
-</body>
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  <div class="section white">
+    <div class="row container">
+      <h2 class="header">Parallax</h2>
+      <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
+    </div>
+  </div>
+  <div class="parallax-container">
+    <div class="parallax"><img src="https://static.pexels.com/photos/292999/pexels-photo-292999.jpeg"></div>
+  </div> --}}
+{{outlet}}
+{{!-- <footer class="page-footer blue">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">Pean</h5>
+        <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">Links</h5>
+        <ul>
+          <li><a class="grey-text text-lighten-3" href="#!">About</a></li>
+          <li><a class="grey-text text-lighten-3" href="#!">Contact</a></li>
+          <li><a class="grey-text text-lighten-3" href="#!">Services</a></li>
+          <li><a class="grey-text text-lighten-3" href="#!">Store</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+      © 2017 Pean
+      <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+    </div>
+  </div>
+</footer> --}}
