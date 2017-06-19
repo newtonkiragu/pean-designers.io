@@ -1,3 +1,5 @@
+{{lookup-form nameLookup="nameLookup"}}
+{{outlet}} 
 
 
 {{!-- {{lookup-form nameLookup="nameLookup"}} --}}
@@ -6,26 +8,20 @@
 {{/each}} -->
 
 
-<!--
-{{outlet}}
-{{#link-to 'store'}}
-  <h3>Start Shopping</h3>
-{{/link-to}} -->
 
+<!-- {{#link-to 'store'}}
+  <h3>Start Shopping</h3>
+{{/link-to}}
+ -->
 
 
 {{!-- ///renders list of brands from api--}}
-<ul>
-  {{#each model as |brand|}}
-    {{brand-name brand=brand}}
-  {{/each}}
-</ul>
+
 
 {{!-- ///renders name look up --}}
 <!-- <header id="main">
 	<h1>Desiignerz Club</h1>
 </header>
-{{lookup-form nameLookup="nameLookup"}}
  -->
 
 
