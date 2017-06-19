@@ -1,6 +1,6 @@
 <!-- {{lookup-form nameLookup="nameLookup"}} {{outlet}} -->
 <ul>
-  {{#each model as |product|}}
+  {{#each model.products as |product|}}
     {{product-tile product=product}}
   {{/each}}
 </ul>

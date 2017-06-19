@@ -17,6 +17,7 @@ Router.map(function() {
   this.route('admin');
   })
 
+  this.route('product');
 });
 
 export default Router;

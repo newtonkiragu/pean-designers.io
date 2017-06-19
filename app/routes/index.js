@@ -2,12 +2,16 @@ import Ember from 'ember';
 import config from '../config/environment';
 
 export default Ember.Route.extend({
+  model() {
+    return this.store.findAll('product');
+    return Ember.RSVP.hash({
+      products: this.store.findAll('product')
+    });
+  },
+
   actions: {
     nameLookup(params) {
       this.transitionTo('results', params.name);
-    },
-    model() {
-      return this.store.findAll('product');
     },
     model: function() {
       var key = config.myApiKey;
