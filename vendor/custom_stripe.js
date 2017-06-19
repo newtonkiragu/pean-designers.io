@@ -1,4 +1,4 @@
-/ Event Listeners
+// Event Listeners
 $('#payment-form').on('submit', generateToken);
  
 var generateToken = function(e) {
