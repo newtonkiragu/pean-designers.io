@@ -21,7 +21,7 @@ model: function(params) {
       	product.set('rating', rating);
       	return product.save();
   	},
-      upVote(answer) {
+      upVote(product) {
           this.sendAction('upVote', product);
         }
 
