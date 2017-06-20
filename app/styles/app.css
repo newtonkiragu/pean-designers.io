@@ -32,6 +32,14 @@ nav {
     background-size: cover;
 }
 
+.cart-nav {
+     height: 250px;
+    background-image: url(https://static.pexels.com/photos/26546/pexels-photo-26546.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 nav .brand-logo {
     font-size: 5.1rem;
     padding: 10px;
