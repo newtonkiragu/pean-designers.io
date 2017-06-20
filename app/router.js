@@ -12,7 +12,7 @@ Router.map(function() {
   this.route('results');
   this.route('results', {path: '/results/:name'});
   this.route('store', function() {
-  })
+  });
 
   this.route('cart');
 });
