@@ -18,6 +18,7 @@ model: function(params) {
     addOrder2(params) {
       var addOrder = this.store.createRecord('order',params);
       addOrder.save();
+      Materialize.toast('Added to cart!', 4000);
     }
   }
 });
