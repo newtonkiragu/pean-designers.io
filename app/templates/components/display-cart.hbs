@@ -1,12 +1,4 @@
-<ul>
+<h3>My Cart</h3>
 {{#each shoppingCart.items as |item|}}
-  <li>{{item.title}} -- {{item.cost}}</li>
-{{else}}
-  <p>Your Shopping Cart is Empty!</p>
-  <p>Start Shopping Above</p>
+    <li>{{item.brandedName}} -- {{item.priceLabel}}</li>
 {{/each}}
-</ul>
-<section class="price">
-  Total: ${{shoppingCart.totalPrice}}
-  <button {{action 'empty'}}>Empty your Shopping Cart</button>
-</section>
