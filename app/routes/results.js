@@ -3,6 +3,7 @@ import config from '../config/environment';
 
 export default Ember.Route.extend({
 
+
 model: function(params) {
    var key = config.myApiKey;
    console.log(config.myApiKey);
@@ -19,7 +20,11 @@ model: function(params) {
   		const { item: product, rating } = params;
       	product.set('rating', rating);
       	return product.save();
-  	}
+  	},
+      upVote(answer) {
+          this.sendAction('upVote', product);
+        }
+
   }
 });
 
