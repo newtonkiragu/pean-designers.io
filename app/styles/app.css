@@ -98,6 +98,10 @@ label {
 }
 
 //############### Contact form style ####################
+//
+#bg {
+    background-image: url('https://static.pexels.com/photos/346745/pexels-photo-346745.jpeg');
+}
 // #bg {
 //         position: absolute;
 //         left: 0px;
@@ -327,11 +331,11 @@ label {
 
 // ###### About Section ###########
  
-html, body{ background-color:#1a948d; } 
+// html, body{ background-color:#1a948d; } 
 
 body
 { 
-    background-image: url('../images/background.jpg');
+    background-image: url('https://static.pexels.com/photos/346745/pexels-photo-346745.jpeg');
     background-repeat: no-repeat;
     background-position: top center;
     width:100%;
