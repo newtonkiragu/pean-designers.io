@@ -1,5 +1,6 @@
 
 <h3>My Cart {{shoppingCart.items.length}} Items</h3>
+<button {{action 'emptyCart'}} >Empty Cart</button>
 
 {{#each shoppingCart.items as |item|}}
     <li>{{item.brandedName}} -- {{item.priceLabel}}

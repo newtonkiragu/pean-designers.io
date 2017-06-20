@@ -5,6 +5,9 @@ export default Ember.Component.extend({
     actions: {
         remove(item){
             this.get('shoppingCart').remove(item);
+        },
+        emptyCart(){
+            this.get('shoppingCart').emptyCart();
         }
     }
 });

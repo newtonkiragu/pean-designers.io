@@ -9,6 +9,9 @@ export default Ember.Service.extend({
     },
    remove(product) {
         this.get('items').removeObject(product);
+   },
+   emptyCart() {
+       this.get('items').clear();
    } 
 
 });
