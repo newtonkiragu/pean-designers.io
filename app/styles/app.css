@@ -350,10 +350,12 @@ label {
 //##############End styling for Contact form ###################
 // ###### About Section ###########
 // html, body{ background-color:#1a948d; }
-body {
+#body {
   background-image: url('https://static.pexels.com/photos/346745/pexels-photo-346745.jpeg');
   background-repeat: no-repeat;
   background-position: top center;
+  background-size: cover;
+  /*background-size: 500px;*/
 }
 
 header {
