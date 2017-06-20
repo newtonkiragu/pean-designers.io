@@ -5,7 +5,7 @@
 {{#each shoppingCart.items as |item|}}
     <li>{{item.brandedName}} -- {{item.priceLabel}}
         <button {{action 'remove' item}} >remove</button>
-        <button {{action 'addItem' item}} >-</button>
-        <button {{action 'removeItem' item}} >+</button>
+        <button {{action 'removeItem' item}} >-</button>
+        <button {{action 'addItem' item}} >+</button>
     </li>
 {{/each}}

@@ -5,13 +5,26 @@ export default Ember.Service.extend({
 
     add(product) {
         var items = this.get('items');
-        items.pushObject(product);    
+        if(items.includes(product)){
+            console.log("already in cart");
+        }else{
+            items.pushObject(product);    
+        }
+        
     },
-   remove(product) {
+    addItem(product){
+        if (this.get('items') == product) {
+            console.log(this.get('items'));
+        } else {
+            console.log('siko bie');
+            console.log(this.get('items'));
+        }
+    },
+    remove(product) {
         this.get('items').removeObject(product);
-   },
-   emptyCart() {
+    },
+    emptyCart() {
        this.get('items').clear();
-   } 
+    } 
 
 });
