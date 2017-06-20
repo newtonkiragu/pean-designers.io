@@ -5,11 +5,12 @@ export default Ember.Service.extend({
 
     add(product) {
         var items = this.get('items');
-        if(items.includes(product)){
-            console.log("already in cart");
-        }else{
-            items.pushObject(product);    
-        }
+        items.pushObject(product);    
+        // if(items.includes(product)){
+        //     console.log("already in cart");
+        // }else{
+        //     items.pushObject(product);    
+        // }
         
     },
     // add item quantity in cart
