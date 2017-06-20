@@ -8,6 +8,10 @@ export default Ember.Component.extend({
         },
         emptyCart(){
             this.get('shoppingCart').emptyCart();
-        }
+        },
+        addItem(item){
+            console.log(item);
+        },
+        removeItem(item){}
     }
 });
