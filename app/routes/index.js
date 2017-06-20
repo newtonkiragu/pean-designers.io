@@ -10,8 +10,8 @@ actions: {
      upVote(product) {
       var  votes = parseInt(product.get('upvote'));
       votes+=1;
-      answer.set('upvote', votes);
-      answer.save();
+      product.set('upvote', votes);
+      product.save();
     },
     model: function() {
    var key = config.myApiKey;

@@ -20,7 +20,10 @@
 </nav>
 
 {{lookup-form nameLookup="nameLookup"}}
+
+<iframe src="https://feed.mikle.com/widget/v2/33838/"></iframe>
 {{#each model as |product|}}
+{{action 'upVote' product}}
 <div class="product-container">
 	<div class="row" id="product-card">
 		<div class="">
@@ -29,7 +32,7 @@
 					<img src={{product.image.sizes.Best.url}}>
 					<span class="card-title">{{product.name}}</span>
 					<a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
-					<a class="btn-floating  waves-effect waves-light yellow"><i class="material-icons"  {{action 'upVote' product}} >grade|</i></a>
+					<a class="btn-floating  waves-effect waves-light yellow"><i class="material-icons"   >grade|</i></a>
 
 				</div>
 				<div class="card-content">
