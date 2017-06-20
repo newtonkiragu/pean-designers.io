@@ -1,3 +1,4 @@
+{{head-title 'Pean | Cart'}}
 <nav class="cart-nav">
 	<div class="nav-wrapper">
 		<a href="/" class="brand-logo">Pean</a>
@@ -21,19 +22,22 @@
     <h4>Total: {{shoppingCart.total}} </h4>
 	<a class="waves-effect waves-light red btn" {{action 'emptyCart'}}>Empty Cart</a>
 	{{#each shoppingCart.items as |item|}}
-	<table>
+	<table  class="products-table">
 		<thead>
 			<tr>
 				<th>Product</th>
+				<th>Price</th>
 			</tr>
 		</thead>
 		<tbody>
-		<tr>{{item.brandedName}}</tr>
-		<tr>{{item.priceLabel}}</tr>
-	<a class="waves-effect waves-light blue btn" {{action 'remove' item}}>Remove Item</a>
-	<a class="btn-floating btn-small waves-effect waves-light red" {{action 'addItem' item}}><i class="material-icons">add</i></a>
-	<a class="btn-floating btn-small waves-effect waves-light red" {{action 'removeItem' item}}><i class="material-icons">delete</i></a>
-</tbody>
-</table>
-{{/each}}
+			<tr>
+				<td>{{item.brandedName}}</td>
+				<td>{{item.priceLabel}}</td>
+			</tr>
+			<a class="waves-effect waves-light blue btn" {{action 'remove' item}}>Remove Item</a>
+			<a class="btn-floating btn-small waves-effect waves-light red" {{action 'addItem' item}}><i class="material-icons">add</i></a>
+			<a class="btn-floating btn-small waves-effect waves-light red" {{action 'removeItem' item}}><i class="material-icons">delete</i></a>
+		</tbody>
+	</table>
+	{{/each}}
 </div>

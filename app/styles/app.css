@@ -33,8 +33,8 @@ nav {
 }
 
 .cart-nav {
-     height: 250px;
-    background-image: url(https://static.pexels.com/photos/26546/pexels-photo-26546.jpg);
+     height: 100px;
+    background-image: url(https://static.pexels.com/photos/264699/pexels-photo-264699.jpeg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -103,4 +103,8 @@ label {
 .product-price {
     color: ;
     font-weight: bolder;
+}
+
+.products-table {
+    margin-top: 35px;
 }
