@@ -9,6 +9,7 @@ export default Ember.Component.extend({
                 product_name: product.brandedName,
                 product_id: product.id,
                 product_cost: product.priceLabel,
+                quantity: 0,
             };
             this.get('shoppingCart').add(product);
             this.sendAction('addOrder1', params);
