@@ -12,9 +12,14 @@ export default Ember.Service.extend({
         }
         
     },
+    // add item quantity in cart
     addItem(product){
-        if (this.get('items') == product) {
-            console.log(this.get('items'));
+        if (this.get('items').includes(product)) {
+            var items = this.get('items');
+            for(var i =0; i < items.length; i++){
+                console.log(items[i]);
+                console.log(product.product_id);
+            }
         } else {
             console.log('siko bie');
             console.log(this.get('items'));
