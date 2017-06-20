@@ -11,7 +11,7 @@ export default Ember.Component.extend({
                 product_cost: product.priceLabel,
                 quantity: 0,
             };
-            this.get('shoppingCart').add(product);
+            var total = this.get('shoppingCart').add(product);
             this.sendAction('addOrder1', params);
         }
     }

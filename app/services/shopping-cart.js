@@ -2,16 +2,17 @@ import Ember from 'ember';
 
 export default Ember.Service.extend({
     items: [],
+    total: 0,
 
     add(product) {
         var items = this.get('items');
-        items.pushObject(product);    
-        // if(items.includes(product)){
-        //     console.log("already in cart");
-        // }else{
-        //     items.pushObject(product);    
-        // }
-        
+        items.pushObject(product); 
+        var itotal=0;   
+        for(var i=0; i < items.length; i++){
+            itotal= itotal + Number(items[i].price);
+            console.log(itotal);
+        }
+        return this.set('total', itotal);
     },
     // add item quantity in cart
     addItem(product){
@@ -31,6 +32,6 @@ export default Ember.Service.extend({
     },
     emptyCart() {
        this.get('items').clear();
-    } 
+    }, 
 
 });
