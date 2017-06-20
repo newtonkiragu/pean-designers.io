@@ -20,7 +20,7 @@
 	<h3>My Cart {{shoppingCart.items.length}} Items</h3>
 	<a class="waves-effect waves-light red btn" {{action 'emptyCart'}}>Empty Cart</a>
 	{{#each shoppingCart.items as |item|}}
-	<table>
+	<table  class="products-table">
 		<thead>
 			<tr>
 				<th>Product</th>
