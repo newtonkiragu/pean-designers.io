@@ -14,6 +14,7 @@ Router.map(function() {
   this.route('store', function() {
   })
 
+  this.route('cart');
 });
 
 export default Router;

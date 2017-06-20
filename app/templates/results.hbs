@@ -38,15 +38,14 @@
 				<div class="card-image">
 					<img src={{product.image.sizes.Best.url}}>
 					<span class="card-title">{{product.name}}</span>
-					{{new-order product=product addOrder1='addOrder2'}}
 				</div>
 				<div class="card-content">
 					<p>{{product.description}}</p>
 					<p class="product-price"> Price: {{product.currency}} {{product.priceLabel}}</p>
+					{{new-order product=product addOrder1='addOrder2'}}
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
 	{{/each}}
->>>>>>> 3d78a2df095cc2183806628ba3c4bc2ba83dd491
