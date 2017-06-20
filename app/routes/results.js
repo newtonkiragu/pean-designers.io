@@ -3,6 +3,7 @@ import config from '../config/environment';
 
 export default Ember.Route.extend({
 
+
 model: function(params) {
    var key = config.myApiKey;
    console.log(config.myApiKey);
@@ -20,5 +21,3 @@ model: function(params) {
     }
   }
 });
-
-
