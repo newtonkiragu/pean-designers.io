@@ -1,4 +1,9 @@
-<h3>My Cart</h3>
+
+<h3>My Cart {{shoppingCart.items.length}} Items</h3>
+<button {{action 'emptyCart'}} >Empty Cart</button>
+
 {{#each shoppingCart.items as |item|}}
-    <li>{{item.brandedName}} -- {{item.priceLabel}}</li>
+    <li>{{item.brandedName}} -- {{item.priceLabel}}
+        <button {{action 'remove' item}} >remove</button>
+    </li>
 {{/each}}
