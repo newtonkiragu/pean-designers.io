@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
-
 body {
     font-size: 16px;
     font-family: 'Raleway', sans-serif;
@@ -16,18 +15,17 @@ main {
 }
 
 nav {
-	height: 650px;
-    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(https://static.pexels.com/photos/92961/pexels-photo-92961.jpeg);
+    height: 650px;
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://static.pexels.com/photos/92961/pexels-photo-92961.jpeg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
 
-.results-nav{
+.results-nav {
     height: 400px;
-    background-image: url(https://static.pexels.com/photos/102129/pexels-photo-102129.jpeg);
-
+    background-image: url(https://static.pexels.com/photos/25641/pexels-photo-25641.jpg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -50,42 +48,200 @@ nav ul a {
 }
 
 nav ul a:hover {
-	text-decoration: none;
-	color: #37c6f5;
+    text-decoration: none;
+    color: #37c6f5;
 }
+
 a {
     outline: 0;
 }
 
 #search-product h1 {
-	text-align: center;
-	margin-top: 160px;
+    text-align: center;
+    margin-top: 160px;
 }
 
 #product-card {
     float: left;
-    width: 450px;
-    vertical-align: top;
-    margin: 0;
+    width: 400px;
+    margin: 2px;
     padding: 20px;
+    margin-left: 32px;
+}
+
+#product-card img {
+    height: 800px;
+}
+
+.product-container {
+    margin-right: -10px;
 }
 
 .card .card-image .card-title {
-	color: black;
-	background-color: beige;
+    color: black;
+    background-color: beige;
+    opacity: 0.5;
 }
 
 .form-group input {
-	font-size: 20px;
+    font-size: 20px;
 }
 
 label {
-	font-size: 18px;
-	color: white;
+    font-size: 18px;
+    color: white;
 }
 
 .product-price {
-	color: ;
-	font-weight: bolder;
+    color: ;
+    font-weight: bolder;
 }
 
+// Contact form style
+@import url(https://fonts.googleapis.com/css?family=Roboto:500,400,300italic,300,400italic,100,100italic);
+* {
+  margin: 0;
+  padding: 0;
+  transition: all 0.5s;
+  font-family: 'Roboto', sans-serif;
+  color: #555;
+}
+body {
+  background: #fff;
+}
+
+
+
+
+form {
+  width: 30%;
+  height: 100%;
+  background: #f1f1f1;
+  margin: 5% 33%;
+  padding: 2%;
+ 
+  border-radius: 2px;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  display: block;
+  margin-top: 2em;
+}
+
+
+
+h1 {
+  text-align: center;
+  margin-top: 5px;
+}
+
+p {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+#logo {
+  font-size: 50px;
+  text-align: center;
+  color: #4889f0;
+}
+
+form input, textarea {
+   border-radius: 2px;
+  width: 90%;
+display: block;
+  font-size: 16px;
+  font-weight: 300;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 10px;
+  border: 1px solid #eceff1;
+  padding: 15px;
+  z-index: 1;
+position: relative;
+  -moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+background: #fff;
+border: 1px solid #d9d9d9;
+border-top: 1px solid #c0c0c0;
+}
+
+[type="submit"] {
+  border: 1px solid #2f5bb7;
+color: #fff;
+ padding: 10px;
+text-shadow: 0 1px rgba(0,0,0,0.3);
+background-color: #357ae8;
+background-image: -webkit-linear-gradient(top,#4d90fe,#357ae8);
+  margin-top: 12px;
+  font-weight: 500;
+}
+
+[type="submit"]:hover {
+border-color: #c6c6c6;
+color: #fff;
+cursor: pointer;
+-o-transition: all 0.2s;
+-moz-transition: all 0.3s;
+-webkit-transition: all 0.2s;
+transition: all 0.2s;
+background-color: #4c8ffc;
+background-image: -webkit-linear-gradient(top,#4c8ffc,#4889f0);
+background-image: -moz-linear-gradient(top,#4c8ffc,#4889f0);
+background-image: -ms-linear-gradient(top,#4c8ffc,#4889f0);
+background-image: -o-linear-gradient(top,#4c8ffc,#4889f0);
+background-image: linear-gradient(top,#4c8ffc,#4889f0);
+-moz-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  }
+
+  
+footer {
+  text-align: center;
+  margin-top: -20px;
+  
+  p {
+    color: #3895dd;
+    padding-bottom: -5px;
+    font-size: 16px;
+  }
+  
+  a {
+    border-bottom: 1px dashed #363636;
+    text-decoration: none;
+    margin-left: 5px;
+  }
+  
+}
+
+.checkbox {
+  padding: 8px;
+  margin-top: 8px;
+}
+
+
+.human_veryfication {
+  float: left;
+  margin-left: -60px;
+  margin-top: 5px;
+}
+
+lable {
+  margin-left: -180px;
+}
+
+
+@media only screen and (max-width: 800px) {
+    form {
+        left: 3%;
+        margin-right: 3%;
+        width: 88%;
+        margin-left: 3%;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+}
+//End styling for Contact form
+
+
+ 
