@@ -1,15 +1,3 @@
-
-{{!-- <div class="container">
-	<ul>
-		{{#each model as |product|}}
-		<li> {{product.id}} {{product.name}}</li>
-		<li> {{product.unbrandedName}} {{product.brandedName}}</li>
-		<li> {{product.currency}} {{product.priceLabel}}</li>
-		<li> {{product.instock}} {{product.stock}}</li>
-		<li><img src="{{product.image.sizes.Best.url}}" alt=""></li>
-		{{/each}}
-	</ul>
-</div> --}}
 {{head-title 'Pean | Results'}}
 <nav class="blue">
   <div class="nav-wrapper">
@@ -18,13 +6,11 @@
     <ul class="right hide-on-med-and-down">
       <li>{{#link-to 'about'}} About {{/link-to}} </li>
       <li> {{#link-to 'contacts'}} Contact {{/link-to}} </li>
-      {{!--<li><a href="collapsible.html">Services</a></li>--}}
       <li> {{#link-to 'cart'}} Cart {{/link-to}} </li>
     </ul>
     <ul class="side-nav" id="mobile-demo">
       <li>{{#link-to 'about'}} About {{/link-to}} </li>
       <li> {{#link-to 'contacts'}} Contact {{/link-to}} </li>
-      {{!--<li><a href="collapsible.html">Services</a></li>--}}
       <li> {{#link-to 'cart'}} Cart {{/link-to}} </li>
     </ul>
     {{!-- ///renders name look up --}}
@@ -32,7 +18,6 @@
 
   </div>
 </nav>
-{{lookup-form nameLookup="nameLookup"}}
 {{#each model as |product|}}
 <div class="product-container">
 	<div class="row" id="product-card">
