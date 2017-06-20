@@ -25,6 +25,12 @@ model: function(params) {
           this.sendAction('upVote', product);
         }
 
+  },
+
+  actions: {
+    addOrder2(params) {
+      var addOrder = this.store.createRecord('order',params);
+      addOrder.save();
+    }
   }
 });
-

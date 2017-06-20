@@ -6,6 +6,7 @@ actions: {
     nameLookup(params) {
       this.transitionTo('results', params.name);
     },
+
      upVote(product) {
       var  votes = parseInt(product.get('upvote'));
       votes+=1;
@@ -21,6 +22,5 @@ actions: {
      return responseJSON.product;
    });
   },
-
   }
 });
