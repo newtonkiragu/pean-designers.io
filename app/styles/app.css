@@ -24,14 +24,22 @@ nav {
 }
 
 .results-nav {
-    height: 400px;
-    background-image: url(https://static.pexels.com/photos/25641/pexels-photo-25641.jpg);
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin-bottom: 45px;
+}
+
+.cart-nav {
+     height: 100px;
+    background-image: url(https://static.pexels.com/photos/264699/pexels-photo-264699.jpeg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
-
 nav .brand-logo {
     font-size: 5.1rem;
     padding: 10px;
@@ -70,7 +78,7 @@ a {
 }
 
 #product-card img {
-    height: 800px;
+
 }
 
 .product-container {
@@ -95,147 +103,7 @@ label {
 .product-price {
     color: ;
     font-weight: bolder;
-}
 
-//############### Contact form style ####################
-//
-#bg {
-    background-image: url('https://static.pexels.com/photos/346745/pexels-photo-346745.jpeg');
-}
-// #bg {
-//         position: absolute;
-//         left: 0px;
-//         top: 0px;
-//         height: 100%;
-//         width: 100%;
-//         background: #ffffff; background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iNDAlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2JiYmJiYiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9yYWRpYWxHcmFkaWVudD4KICA8cmVjdCB4PSItNTAiIHk9Ii01MCIgd2lkdGg9IjEwMSIgaGVpZ2h0PSIxMDEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==); background: -moz-radial-gradient(center, ellipse cover,  #ffffff 40%, #bbbbbb 100%); background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(40%,#ffffff), color-stop(100%,#bbbbbb)); background: -webkit-radial-gradient(center, ellipse cover,  #ffffff 40%,#bbbbbb 100%); background: -o-radial-gradient(center, ellipse cover,  #ffffff 40%,#bbbbbb 100%); background: -ms-radial-gradient(center, ellipse cover,  #ffffff 40%,#bbbbbb 100%); background: radial-gradient(ellipse at center,  #ffffff 40%,#bbbbbb 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#bbbbbb',GradientType=1 );
-// }
-.contact {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        margin-left: -125px;
-        margin-top: -125px;
-        height: 250px;
-        width: 250px;
-        background: rgba(0, 0, 0, 0.1);
-        
-        border-radius: 2px;
-        -ms-border-radius: 2px;
-        -moz-border-radius: 2px;
-        -o-border-radius: 2px;
-        -webkit-border-radius: 2px;
-}
-.contact .envelope {
-        position: absolute;
-        height: 93px;
-        width: 165px;
-        left: 50%;
-        margin-left: -83px;
-        top: 50%;
-        margin-top: -50px;
-        background: #F9F9F9;
-        
-        transition: margin-top 300ms;
-        -ms-transition: margin-top 300ms;
-        -moz-transition: margin-top 300ms;
-        -o-transition: margin-top 300ms;
-        -webkit-transition: margin-top 300ms;
-}
-.contact:hover .envelope {
-        transition-delay: 150ms;
-        -ms-transition-delay: 150ms;
-        -moz-transition-delay: 150ms;
-        -o-transition-delay: 150ms;
-        margin-top: -20px;
-}
-.contact .envelope .top {
-        position: absolute;
-        top: -3px;
-        left: 0px;
-        width: 100%;
-        height: 73px;
-        z-index: 30;
-        overflow: hidden;
-                        
-        transform-origin: top;
-        -ms-transform-origin: top;
-        -moz-transform-origin: top;
-        -o-transform-origin: top;
-        -webkit-transform-origin: top;
-                    
-        transition: transform 300ms 150ms, z-index 0ms 150ms, height 300ms 0ms, top 300ms 0ms;
-        -ms-transition: -ms-transform 300ms 150ms, z-index 0ms 150ms, height 300ms 0ms, top 300ms 0ms;
-        -moz-transition: -moz-transform 300ms 150ms, z-index 0ms 150ms, height 300ms 0ms, top 300ms 0ms;
-        -o-transition: -o-transform 300ms 150ms, z-index 0ms 150ms, height 300ms 0ms, top 300ms 0ms;
-        -webkit-transition: -webkit-transform 300ms 150ms, z-index 0ms 150ms, height 300ms 0ms, top 300ms 0ms;
-}
-.contact:hover .envelope .top {
-        transition: transform 300ms 0ms, height 300ms 150ms, top 300ms 150ms;
-        -ms-transition: -ms-transform 300ms 0ms, height 300ms 150ms, top 300ms 150ms;
-        -moz-transition: -moz-transform 300ms 0ms, height 300ms 150ms, top 300ms 150ms;
-        -o-transition: -o-transform 300ms 0ms, height 300ms 150ms, top 300ms 150ms;
-        -webkit-transition: -webkit-transform 300ms 0ms, height 300ms 150ms, top 300ms 150ms;
-        
-        height: 10px;
-        top: -60px;
-        
-        transform: rotateX(180deg);
-        -ms-transform: rotateX(180deg);
-        -moz-transform: rotateX(180deg);
-        -o-transform: rotateX(180deg);
-        -webkit-transform: rotateX(180deg);
-}
-.contact .envelope .outer {
-        position: absolute;
-        bottom: 0px;
-        left: 0px;
-        border-left: 83px solid transparent;
-        border-right: 82px solid transparent;
-        border-top: 70px solid #EEE;
-}
-.contact .envelope .outer .inner {
-        position: absolute;
-        left: -81px;
-        top: -73px;
-        border-left: 81px solid transparent;
-        border-right: 80px solid transparent;
-        border-top: 68px solid #333;
-}
-.contact .envelope .bottom {
-        position: absolute;
-        z-index: 20;
-        bottom: 0px;
-        left: 2px;
-        border-left: 81px solid transparent;
-        border-right: 80px solid transparent;
-        border-bottom: 45px solid #333;
-}
-.contact .envelope .left {
-        position: absolute;
-        z-index: 20; top: 0px;
-        left: 0px;
-        border-left: 81px solid #333;
-        border-top: 45px solid transparent;
-        border-bottom: 45px solid transparent;
-}
-.contact .envelope .right {
-        position: absolute;
-        z-index: 20;
-        top: 0px;
-        right: 0px;
-        border-right: 80px solid #333;
-        border-top: 45px solid transparent;
-        border-bottom: 45px solid transparent;
-}
-.contact .envelope .cover {
-        position: absolute;
-        z-index: 15;
-        bottom: 0px;
-        left: 0px;
-        height: 55%;
-        width: 100%;
-        background: #EEE;
 }
 .contact .envelope .paper {
         position: absolute;
@@ -327,53 +195,3 @@ label {
 //##############End styling for Contact form ###################
  
 
-// ### STYLING for the loading screen ###
-#loader-wrapper .loader-section {
-    position: fixed;
-    top: 0;
-    width: 51%;
-    height: 100%;
-    background: #222222;
-    z-index: 1000;
-}
- 
-#loader-wrapper .loader-section.section-left {
-    left: 0;
-}
- 
-#loader-wrapper .loader-section.section-right {
-    right: 0;
-}
-
-
-#loader {
-    z-index: 1001; /* anything higher than z-index: 1000 of .loader-section */
-}
-h1 {
-    color: #EEEEEE;
-}
-
-
-#content {
-    margin: 0 auto;
-    padding-bottom: 50px;
-    width: 80%;
-    max-width: 978px;
-}
-
-// preloader transition
-// 
-// 
-/* Loaded */
-.loaded #loader-wrapper .loader-section.section-left {
-    -webkit-transform: translateX(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
-    -ms-transform: translateX(-100%);  /* IE 9 */
-    transform: translateX(-100%);  /* Firefox 16+, IE 10+, Opera */
-}
- 
-.loaded #loader-wrapper .loader-section.section-right {
-    -webkit-transform: translateX(100%);  /* Chrome, Opera 15+, Safari 3.1+ */
-    -ms-transform: translateX(100%);  /* IE 9 */
-    transform: translateX(100%);  /* Firefox 16+, IE 10+, Opera */
-}
-// ###### End loading styling #####
