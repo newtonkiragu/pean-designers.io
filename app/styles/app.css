@@ -24,12 +24,13 @@ nav {
 }
 
 .results-nav {
-    height: 400px;
-    background-image: url(https://static.pexels.com/photos/25641/pexels-photo-25641.jpg);
+    height: 100px;
+    background-image: url(https://static.pexels.com/photos/9445/clothes-sweater-colors-wardrobe.jpg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    margin-bottom: 45px;
 }
 
 .cart-nav {
