@@ -16,7 +16,7 @@ model: function(params) {
   },
   actions:{
   	updateRating(params){
-  		console.log('i get here');
+  		// console.log('i get here');
   		const { item: product, rating } = params;
       	product.set('rating', rating);
       	return product.save();
