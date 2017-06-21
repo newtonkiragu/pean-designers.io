@@ -13,15 +13,12 @@
     <ul class="side-nav" id="mobile-demo">
       <li>{{#link-to 'about'}} About {{/link-to}} </li>
       <li> {{#link-to 'contacts'}} Contact {{/link-to}} </li>
-      {{!--<li><a href="collapsible.html">Services</a></li>--}}
       <li> {{#link-to 'cart'}} Cart {{/link-to}} </li>
     </ul>
-    
 {{lookup-form nameLookup="nameLookup"}}
 
   </div>
 </nav>
-
 <ul>
   {{#each model as |product|}}
     {{product-tile product=product}}
