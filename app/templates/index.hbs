@@ -1,45 +1,36 @@
-
-{{head-title 'Pean | Home'}}
-<nav class="blue">
-  <div class="nav-wrapper">
-    <a href="/" class="brand-logo">Pean</a>
-    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-    <ul class="right hide-on-med-and-down">
-      <li>{{#link-to 'about'}} About {{/link-to}} </li>
-      <li> {{#link-to 'contacts'}} Contact {{/link-to}} </li>
-      {{!--<li><a href="collapsible.html">Services</a></li>--}}
-      <li> {{#link-to 'cart'}} Cart {{/link-to}} </li>
-    </ul>
-    <ul class="side-nav" id="mobile-demo">
-      <li>{{#link-to 'about'}} About {{/link-to}} </li>
-      <li> {{#link-to 'contacts'}} Contact {{/link-to}} </li>
-      {{!--<li><a href="collapsible.html">Services</a></li>--}}
-      <li> {{#link-to 'cart'}} Cart {{/link-to}} </li>
-    </ul>
-    {{!-- ///renders name look up --}}
+  {{!-- ///renders name look up --}}
 {{lookup-form nameLookup="nameLookup"}}
-
-  </div>
-</nav>
-{{!-- {{lookup-form nameLookup="nameLookup"}} --}}
 
 
 
 {{outlet}}
-<footer class="page-footer blue">
+
+{{!-- ///renders list of products from api--}}
+<ul>
+  {{#each model as |product|}}
+    {{product-tile product=product}}
+  {{/each}}
+</ul>
+
+{{outlet}}
+
+
+<footer class="page-footer black">
   <div class="container">
     <div class="row">
       <div class="col l6 s12">
         <h5 class="white-text">Pean</h5>
-        <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+        <p class="grey-text text-lighten-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        </p>
       </div>
       <div class="col l4 offset-l2 s12">
         <h5 class="white-text">Links</h5>
         <ul>
-          <li><a class="grey-text text-lighten-3" href="/about">About</a></li>
-          <li><a class="grey-text text-lighten-3" href="/contact">Contact</a></li>
-          <li><a class="grey-text text-lighten-3" href="/services">Services</a></li>
-          <li><a class="grey-text text-lighten-3" href="/store">Store</a></li>
+           <li>{{#link-to 'index'}} Home {{/link-to}} </li>
+           <li>{{#link-to 'about'}} About {{/link-to}} </li>
+           <li> {{#link-to 'contacts'}} Contact {{/link-to}} </li>
+           <li> {{#link-to 'cart'}} Cart {{/link-to}} </li>
         </ul>
       </div>
     </div>
@@ -51,3 +42,4 @@
     </div>
   </div>
 </footer>
+

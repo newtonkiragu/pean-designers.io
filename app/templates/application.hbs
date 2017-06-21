@@ -1,1 +1,22 @@
+{{!-- ### Nav Bar section ### --}}
+{{head-title 'Pean | Home'}}
+<nav class="blue">
+  <div class="nav-wrapper">
+    <a href="/" class="brand-logo">Pean</a>
+    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+    <ul class="right hide-on-med-and-down">
+      <li>{{#link-to 'about'}} About {{/link-to}} </li>
+      <li> {{#link-to 'contacts'}} Contact {{/link-to}} </li>
+      <li> {{#link-to 'cart'}} Cart {{/link-to}} </li>
+    </ul>
+    <ul class="side-nav" id="mobile-demo">
+      <li>{{#link-to 'about'}} About {{/link-to}} </li>
+      <li> {{#link-to 'contacts'}} Contact {{/link-to}} </li>
+      <li> {{#link-to 'cart'}} Cart {{/link-to}} </li>
+    </ul>
+  </div>
+</nav>
+
+
+
 {{outlet}}

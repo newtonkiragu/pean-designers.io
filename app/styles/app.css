@@ -15,7 +15,6 @@ main {
 }
 
 nav {
-    height: 650px;
     background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://static.pexels.com/photos/92961/pexels-photo-92961.jpeg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -23,24 +22,6 @@ nav {
     background-size: cover;
 }
 
-.results-nav {
-    height: 100px;
-    background-image: url(https://static.pexels.com/photos/9445/clothes-sweater-colors-wardrobe.jpg);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    margin-bottom: 45px;
-}
-
-.cart-nav {
-     height: 100px;
-    background-image: url(https://static.pexels.com/photos/264699/pexels-photo-264699.jpeg);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
 nav .brand-logo {
     font-size: 5.1rem;
     padding: 10px;
@@ -79,7 +60,7 @@ a {
 }
 
 #product-card img {
-    height: 400px;
+    height: 450px;
 }
 
 .product-container {
@@ -104,8 +85,95 @@ label {
 .product-price {
     color: ;
     font-weight: bolder;
-}
 
-.products-table {
-    margin-top: 35px;
 }
+.contact .envelope .paper {
+        position: absolute;
+        height: 83px;
+        padding-top: 10px;
+        width: 100%;
+        top: 0px;
+        left: 0px;
+        background: #F9F9F9;
+        z-index: 10;
+        transition: margin-top 300ms 0ms;
+        -ms-transition: margin-top 300ms 0ms;
+        -moz-transition: margin-top 300ms 0ms;
+        -o-transition: margin-top 300ms 0ms;
+        -webkit-transition: margin-top 300ms 0ms;
+}
+.contact:hover .envelope .paper {
+        margin-top: -60px;
+        transition: margin-top 300ms 150ms;
+        -ms-transition: margin-top 300ms 150ms;
+        -moz-transition: margin-top 300ms 150ms;
+        -o-transition: margin-top 300ms 150ms;
+        -webkit-transition: margin-top 300ms 150ms;
+}
+.contact .envelope .paper a {
+        position: relative;
+        display: block;
+        font-size: 14px;
+        margin: 5px;
+        margin-bottom: 0px;
+        text-align: center;
+        color: #333;
+        text-decoration: none;
+}
+.contact .envelope .paper a.call .i {
+        position: absolute;
+        top: 2px;
+        left: 20px;
+        display: inline-block;
+        width: 3px;
+        height: 5px;
+        border-width: 5px 0 5px 2px;
+        border-style: solid;
+        border-color: #555;
+        background: transparent;
+        
+        transform: rotate(-30deg);
+        -ms-transform: rotate(-30deg);
+        -moz-transform: rotate(-30deg);
+        -o-transform: rotate(-30deg);
+        -webkit-transform: rotate(-30deg);
+
+        border-top-left-radius: 3px 5px;
+        border-bottom-left-radius: 3px 5px;
+        -moz-border-radius-topleft: 3px 5px;
+        -moz-border-radius-bottomleft: 3px 5px;
+        -webkit-border-top-left-radius: 3px 5px;
+        -webkit-border-bottom-left-radius: 3px 5px;
+                                                                                                                                                
+        transition: border-color 300ms;
+        -ms-transition: border-color 300ms;
+        -moz-transition: border-color 300ms;
+        -o-transition: border-color 300ms;
+        -webkit-transition: border-color 300ms;
+}
+.contact .envelope .paper a {
+        color: #333;
+
+        transition: color 200ms;
+        -ms-transition: color 200ms;
+        -moz-transition: color 200ms;
+        -o-transition: color 200ms;
+        -webkit-transition: color 200ms;
+}
+.contact .envelope .paper a:hover {
+        color: #EEE;
+}
+.contact .envelope .paper a.call:hover .i {
+        border-color: #DDD;
+}
+.contact .envelope .paper a.mail .i {
+        position: absolute;
+        top: 0px;
+        left: 17px;
+        display: inline-block;
+        font-size: 13px;
+        font-weight: bold;
+}
+//##############End styling for Contact form ###################
+ 
+
