@@ -1,27 +1,89 @@
-
 {{head-title 'Pean | Home'}}
-<nav class="blue">
-  <div class="nav-wrapper">
-    <a href="/" class="brand-logo">Pean</a>
-    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-    <ul class="right hide-on-med-and-down">
-      <li>{{#link-to 'about'}} About {{/link-to}} </li>
-      <li> {{#link-to 'contacts'}} Contact {{/link-to}} </li>
-      {{!--<li><a href="collapsible.html">Services</a></li>--}}
-      <li> {{#link-to 'cart'}} Cart {{/link-to}} </li>
-    </ul>
-    <ul class="side-nav" id="mobile-demo">
-      <li>{{#link-to 'about'}} About {{/link-to}} </li>
-      <li> {{#link-to 'contacts'}} Contact {{/link-to}} </li>
-      <li> {{#link-to 'cart'}} Cart {{/link-to}} </li>
-    </ul>
-{{lookup-form nameLookup="nameLookup"}}
-
+<div class="product-container">
+  <div class="row" id="product-card">
+    <div class="">
+      <div class="card hoverable">
+        <div class="card-image">
+          <img src="https://img.shopstyle-cdn.com/pim/e7/2f/e72f9ce88ca293efdd356082bb16b1ce_best.jpg">
+          <span class="card-title">Kenzo Black Eye T-Shirt</span>
+          {{new-order product=product addOrder1='addOrder2'}}
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4"><i class="material-icons right">more_vert</i></span>
+          <p class="product-price">USD $120</p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Kenzo Black Eye T-Shirt<i class="material-icons right">close</i></span>
+          <p>Short sleeve cotton jersey t-shirt in black. Rib knit crewneck collar. Graphic printed at front. Tonal stitching. 100% cotton. Made in Portugal.</p>
+        </div>
+      </div>
+    </div>
   </div>
-</nav>
+  <div class="row" id="product-card">
+    <div class="">
+      <div class="card hoverable">
+        <div class="card-image">
+          <img src="https://img.shopstyle-cdn.com/pim/e7/2f/e72f9ce88ca293efdd356082bb16b1ce_best.jpg">
+          <span class="card-title">Kenzo Black Eye T-Shirt</span>
+          {{new-order product=product addOrder1='addOrder2'}}
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4"><i class="material-icons right">more_vert</i></span>
+          <p class="product-price">USD $120</p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Kenzo Black Eye T-Shirt<i class="material-icons right">close</i></span>
+          <p>Short sleeve cotton jersey t-shirt in black. Rib knit crewneck collar. Graphic printed at front. Tonal stitching. 100% cotton. Made in Portugal.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row" id="product-card">
+    <div class="">
+      <div class="card hoverable">
+        <div class="card-image">
+          <img src="https://img.shopstyle-cdn.com/pim/e7/2f/e72f9ce88ca293efdd356082bb16b1ce_best.jpg">
+          <span class="card-title">Kenzo Black Eye T-Shirt</span>
+          {{new-order product=product addOrder1='addOrder2'}}
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4"><i class="material-icons right">more_vert</i></span>
+          <p class="product-price">USD $120</p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Kenzo Black Eye T-Shirt<i class="material-icons right">close</i></span>
+          <p>Short sleeve cotton jersey t-shirt in black. Rib knit crewneck collar. Graphic printed at front. Tonal stitching. 100% cotton. Made in Portugal.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{{lookup-form nameLookup="nameLookup"}}
+<footer class="page-footer black">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">Pean</h5>
+        <p class="grey-text text-lighten-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        </p>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">Links</h5>
+        <ul>
+           <li>{{#link-to 'index'}} Home {{/link-to}} </li>
+           <li>{{#link-to 'about'}} About {{/link-to}} </li>
+           <li> {{#link-to 'contacts'}} Contact {{/link-to}} </li>
+           <li> {{#link-to 'cart'}} Cart {{/link-to}} </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
-<ul>
-  {{#each model as |product|}}
-    {{product-tile product=product}}
-  {{/each}}
-</ul>
+  <div class="footer-copyright">
+    <div class="container">
+      © 2017 Pean
+      <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+    </div>
+  </div>
+</footer>

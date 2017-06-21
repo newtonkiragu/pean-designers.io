@@ -32,6 +32,7 @@ export default Ember.Service.extend({
     },
     emptyCart() {
        this.get('items').clear();
+       return this.set('total', 0);
     }, 
 
 });
