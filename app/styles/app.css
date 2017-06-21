@@ -15,12 +15,13 @@ main {
 }
 
 nav {
-    height: 650px;
+    height: 400px;
     background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://static.pexels.com/photos/92961/pexels-photo-92961.jpeg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: cover
+
 }
 
 .results-nav {
