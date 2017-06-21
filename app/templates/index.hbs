@@ -1,18 +1,62 @@
-<h1>Search </h1>
-
-{{!-- ///renders name look up --}}
-
+{{head-title 'Pean | Home'}}
+<div class="product-container">
+  <div class="row" id="product-card">
+    <div class="">
+      <div class="card hoverable">
+        <div class="card-image">
+          <img src="https://img.shopstyle-cdn.com/pim/e7/2f/e72f9ce88ca293efdd356082bb16b1ce_best.jpg">
+          <span class="card-title">Kenzo Black Eye T-Shirt</span>
+          {{new-order product=product addOrder1='addOrder2'}}
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4"><i class="material-icons right">more_vert</i></span>
+          <p class="product-price">USD $120</p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Kenzo Black Eye T-Shirt<i class="material-icons right">close</i></span>
+          <p>Short sleeve cotton jersey t-shirt in black. Rib knit crewneck collar. Graphic printed at front. Tonal stitching. 100% cotton. Made in Portugal.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row" id="product-card">
+    <div class="">
+      <div class="card hoverable">
+        <div class="card-image">
+          <img src="https://img.shopstyle-cdn.com/pim/e7/2f/e72f9ce88ca293efdd356082bb16b1ce_best.jpg">
+          <span class="card-title">Kenzo Black Eye T-Shirt</span>
+          {{new-order product=product addOrder1='addOrder2'}}
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4"><i class="material-icons right">more_vert</i></span>
+          <p class="product-price">USD $120</p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Kenzo Black Eye T-Shirt<i class="material-icons right">close</i></span>
+          <p>Short sleeve cotton jersey t-shirt in black. Rib knit crewneck collar. Graphic printed at front. Tonal stitching. 100% cotton. Made in Portugal.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row" id="product-card">
+    <div class="">
+      <div class="card hoverable">
+        <div class="card-image">
+          <img src="https://img.shopstyle-cdn.com/pim/e7/2f/e72f9ce88ca293efdd356082bb16b1ce_best.jpg">
+          <span class="card-title">Kenzo Black Eye T-Shirt</span>
+          {{new-order product=product addOrder1='addOrder2'}}
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4"><i class="material-icons right">more_vert</i></span>
+          <p class="product-price">USD $120</p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Kenzo Black Eye T-Shirt<i class="material-icons right">close</i></span>
+          <p>Short sleeve cotton jersey t-shirt in black. Rib knit crewneck collar. Graphic printed at front. Tonal stitching. 100% cotton. Made in Portugal.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 {{lookup-form nameLookup="nameLookup"}}
-
-
-
-
-
-{{!-- ///renders list of products from api--}}
-<ul>
-  {{#each model as |product|}}
-    {{product-tile product=product}}
-  {{/each}}
-</ul>
-
 
