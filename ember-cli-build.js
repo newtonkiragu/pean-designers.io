@@ -1,4 +1,6 @@
 /* eslint-env node */
+app.import('bower_components/bootstrap/dist/css/bootstrap.css');
+
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function(defaults) {
