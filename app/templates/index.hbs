@@ -1,20 +1,6 @@
-  {{!-- ///renders name look up --}}
+{{head-title 'Pean | Home'}}
+
 {{lookup-form nameLookup="nameLookup"}}
-
-
-
-{{outlet}}
-
-{{!-- ///renders list of products from api--}}
-<ul>
-  {{#each model as |product|}}
-    {{product-tile product=product}}
-  {{/each}}
-</ul>
-
-{{outlet}}
-
-
 <footer class="page-footer black">
   <div class="container">
     <div class="row">
