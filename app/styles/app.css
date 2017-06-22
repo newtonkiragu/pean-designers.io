@@ -15,7 +15,7 @@ main {
 }
 
 nav {
-  height: 400px;
+  height: 650px;
   background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://static.pexels.com/photos/92961/pexels-photo-92961.jpeg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -58,7 +58,7 @@ a {
 
 #search-product h1 {
   text-align: center;
-  margin-top: 650px;
+  margin-top: 160px;
 }
 
 #product-card {
