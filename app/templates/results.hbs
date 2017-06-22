@@ -1,4 +1,22 @@
-{{head-title 'Pean | Results'}}
+{{head-title "Pean | Results"}}
+<nav class="results-nav">
+	<div class="nav-wrapper">
+		<a href="/" class="brand-logo">Pean</a>
+		<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+		<ul class="right hide-on-med-and-down">
+			<li>{{#link-to 'index'}} Home {{/link-to}} </li>
+			<li>{{#link-to 'about'}} About {{/link-to}} </li>
+			<li> {{#link-to 'contacts'}} Contact {{/link-to}} </li>
+			<li> {{#link-to 'cart'}} Cart {{/link-to}} </li>
+		</ul>
+		<ul class="side-nav" id="mobile-demo">
+			<li>{{#link-to 'index'}} Home {{/link-to}} </li>
+			<li>{{#link-to 'about'}} About {{/link-to}} </li>
+			<li> {{#link-to 'contacts'}} Contact {{/link-to}} </li>
+			<li> {{#link-to 'cart'}} Cart {{/link-to}} </li>
+		</ul>
+	</div>
+</nav>
 {{#each model as |product|}}
 <div class="product-container">
 	<div class="row" id="product-card">
@@ -7,7 +25,7 @@
 				<div class="card-image">
 					<img src={{product.image.sizes.Best.url}}>
 					<span class="card-title">{{product.name}}</span>
- 					{{new-order product=product addOrder1='addOrder2'}}
+					{{new-order product=product addOrder1='addOrder2'}}
 				</div>
 				<div class="card-content">
 					<span class="card-title activator grey-text text-darken-4"><i class="material-icons right">more_vert</i></span>
@@ -22,4 +40,3 @@
 	</div>
 </div>
 {{/each}}
-
