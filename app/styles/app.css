@@ -590,3 +590,8 @@ html, body {
     left: 55px;
   }
 }
+
+.stripe-button {
+  margin-left: 112px;
+  margin-top: 10px;
+}
