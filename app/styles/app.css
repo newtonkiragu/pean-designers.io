@@ -15,7 +15,7 @@ main {
 }
 
 nav {
-  height: 400px;
+  height: 650px;
   background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://static.pexels.com/photos/92961/pexels-photo-92961.jpeg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -24,12 +24,12 @@ nav {
 }
 
 .results-nav {
-  height: 400px;
-  background-image: url(https://static.pexels.com/photos/25641/pexels-photo-25641.jpg);
+  height: 100px;
+  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://static.pexels.com/photos/92961/pexels-photo-92961.jpeg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: cover
 }
 
 nav .brand-logo {
@@ -58,7 +58,7 @@ a {
 
 #search-product h1 {
   text-align: center;
-  margin-top: 650px;
+  margin-top: 160px;
 }
 
 #product-card {
@@ -589,4 +589,9 @@ html, body {
     top: 20.5%;
     left: 55px;
   }
+}
+
+.stripe-button {
+  margin-left: 112px;
+  margin-top: 10px;
 }
