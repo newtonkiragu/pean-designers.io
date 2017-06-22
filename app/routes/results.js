@@ -12,6 +12,19 @@ export default Ember.Route.extend({
       return responseJSON.products;
     });
   },
+  actions:{
+  	updateRating(params){
+  		// console.log('i get here');
+  		const { item: product, rating } = params;
+      	product.set('rating', rating);
+      	return product.save();
+  	},
+      upVote(product) {
+          this.sendAction('upVote', product);
+        }
+
+  },
+
   actions: {
     addOrder2(params) {
       var addOrder = this.store.createRecord('order', params);

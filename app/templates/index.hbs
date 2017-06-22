@@ -18,6 +18,14 @@
     {{lookup-form nameLookup="nameLookup"}}
   </div>
 </nav>
+
+{{!-- ///renders list of products from api--}}
+<ul>
+  {{#each model as |product|}}
+  {{product-tile product=product}}
+  {{/each}}
+</ul>
+
 <footer class="page-footer black">
   <div class="container">
     <div class="row">
@@ -30,7 +38,6 @@
         <hr>
       </div>
       <div class="col l4 offset-l2 s12">
-
         <a href="https://github.com/pmutua/pean-designers.io"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
         <ul>
           <h5 class="white-text">Contributors</h5>
