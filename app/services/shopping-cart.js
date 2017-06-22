@@ -28,7 +28,14 @@ export default Ember.Service.extend({
         }
     },
     remove(product) {
-        this.get('items').removeObject(product);
+        var cart = this.get('items');
+        cart.removeObject(product);
+        var total = 0;
+        for (var i = 0; i < cart.length; i++) {
+            total = total + Number(cart[i].price);
+        }
+        return this.set('total', total);
+
     },
     emptyCart() {
        this.get('items').clear();
