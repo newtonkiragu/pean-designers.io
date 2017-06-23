@@ -33,7 +33,7 @@ module.exports = function(environment) {
 
   if (environment === 'development') {
     //load api key
-    ENV.myApiKey = process.env.apiKey;
+
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
     // ENV.APP.LOG_TRANSITIONS = true;
@@ -53,7 +53,9 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    exportApplicationGlobal: true
+    exportApplicationGlobal: true,
+    ENV.myApiKey = process.env.apiKey;
+
   }
 
   return ENV;
