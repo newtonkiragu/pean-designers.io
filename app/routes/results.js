@@ -6,22 +6,24 @@ export default Ember.Route.extend({
 
   model: function(params) {
     var key = config.myApiKey;
-    console.log(config.myApiKey);
     var url = 'http://api.shopstyle.com/api/v2/products?pid=uid4089-39490717-44&fts=' + params.name + '&offset=0&limit=10';
     return Ember.$.getJSON(url).then(function(responseJSON) {
       return responseJSON.products;
     });
   },
-  actions:{
-  	updateRating(params){
-  		// console.log('i get here');
-  		const { item: product, rating } = params;
-      	product.set('rating', rating);
-      	return product.save();
-  	},
-      upVote(product) {
-          this.sendAction('upVote', product);
-        }
+  actions: {
+    updateRating(params) {
+      // console.log('i get here');
+      const {
+        item: product,
+        rating
+      } = params;
+      product.set('rating', rating);
+      return product.save();
+    },
+    upVote(product) {
+      this.sendAction('upVote', product);
+    }
 
   },
 
