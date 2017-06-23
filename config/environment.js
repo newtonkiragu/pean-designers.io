@@ -4,7 +4,7 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'bizna',
     environment: environment,
-    exportApplicationGlobal: true,
+
     rootURL: '/',
     locationType: 'auto',
     firebase: {
@@ -53,7 +53,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-
+    exportApplicationGlobal: true
   }
 
   return ENV;
