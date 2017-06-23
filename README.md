@@ -1,6 +1,6 @@
 # Pean
 
-This is an online E-commerce Website where a User can Search for Clothes,Jewelery and shoes and also purchase them. 
+This is an online E-commerce Website where a User can Search for Clothes,Jewelery and shoes and also purchase them using a credit card. 
 
 ## Prerequisites
 
@@ -60,7 +60,7 @@ Specify what it takes to deploy your app.
   * [ShopStyleCollective] (https://www.shopstylecollective.com/api/overview)
   
   ## Project Members
-  * [Andrew Kiburei](https://github.com/kiburei) 
+  * [Andrew Kiburei](https://github.com/kiburei)
   * [Edward Mudaida](https://github.com/EdwardMudaida)
   * [Philip Mutua](https://github.com/pmutua)
   * [Najib Osman](https://github.com/NajibOsman)
