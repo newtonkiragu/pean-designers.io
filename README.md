@@ -1,7 +1,6 @@
 # Pean
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This is an online E-commerce Website where a User can Search for Clothes,Jewelery and shoes and also purchase them using a credit card. 
 
 ## Prerequisites
 
@@ -48,3 +47,21 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+  
+  
+  ## Technologies Used
+  * HTML
+  * CSS 3 - Materialize
+  * JavaScript - Ember JS , JQuery
+  * Bootstrap
+  
+  ### APIs Used
+  * [Stripe] (https://stripe.com/docs/api)
+  * [ShopStyleCollective] (https://www.shopstylecollective.com/api/overview)
+  
+  ## Project Members
+  * [Andrew Kiburei](https://github.com/kiburei)
+  * [Edward Mudaida](https://github.com/EdwardMudaida)
+  * [Philip Mutua](https://github.com/pmutua)
+  * [Najib Osman](https://github.com/NajibOsman)
+  * [Newton Karanu](https://github.com/newtonkiragu)
