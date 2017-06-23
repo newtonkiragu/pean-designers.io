@@ -52,7 +52,7 @@ Specify what it takes to deploy your app.
   ## Technologies Used
   * HTML
   * CSS 3 - Materialize
-  * JavaScript - Ember JS
+  * JavaScript - Ember JS , JQuery
   * Bootstrap
   
   ### APIs Used
