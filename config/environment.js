@@ -4,15 +4,16 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'bizna',
     environment: environment,
+    exportApplicationGlobal: true,
     rootURL: '/',
     locationType: 'auto',
     firebase: {
-        apiKey: "AIzaSyAUxnwfAmlJYVc0MNAMnSQFpw5rCwUw13g",
-        authDomain: "bizna-2888f.firebaseapp.com",
-        databaseURL: "https://bizna-2888f.firebaseio.com",
-        projectId: "bizna-2888f",
-        storageBucket: "bizna-2888f.appspot.com"
-      },
+      apiKey: "AIzaSyAUxnwfAmlJYVc0MNAMnSQFpw5rCwUw13g",
+      authDomain: "bizna-2888f.firebaseapp.com",
+      databaseURL: "https://bizna-2888f.firebaseio.com",
+      projectId: "bizna-2888f",
+      storageBucket: "bizna-2888f.appspot.com"
+    },
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -31,8 +32,8 @@ module.exports = function(environment) {
   };
 
   if (environment === 'development') {
-    //load api key 
-       ENV.myApiKey = process.env.apiKey;
+    //load api key
+    ENV.myApiKey = process.env.apiKey;
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
     // ENV.APP.LOG_TRANSITIONS = true;
