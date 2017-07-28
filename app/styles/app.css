@@ -26,7 +26,7 @@ nav {
 
 .results-nav {
   height: 100px;
-  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://static.pexels.com/photos/92961/pexels-photo-92961.jpeg);
+  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://static.pexels.com/photos/508057/pexels-photo-508057.jpeg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -97,7 +97,7 @@ label {
   font-weight: bolder;
 } //############### Contact form style ####################
 #bg {
-  background-image: url('https://static.pexels.com/photos/346745/pexels-photo-346745.jpeg');
+  background-image: url('https://static.pexels.com/photos/508057/pexels-photo-508057.jpeg');
 }
 
 .contact {
