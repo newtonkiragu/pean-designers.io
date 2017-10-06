@@ -1,5 +1,6 @@
 {{item.name}}
 {{item.details}}
 {{item.price}}
+{{star-rating item=cloth rating=cloth.rating on-click=(action "updateRating")}}
 
 <button {{action 'add' product}}>Add to Cart</button>

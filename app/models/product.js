@@ -1,8 +1,10 @@
+import DS from 'ember-data';
 
 export default DS.Model.extend({
     title: DS.attr(),
     image: DS.attr(),
     description: DS.attr(),
     cost: DS.attr('number'),
-    
+    rating: DS.attr('number'),
+    upvote:DS.attr('number')
 });

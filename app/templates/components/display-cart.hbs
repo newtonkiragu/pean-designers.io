@@ -1,12 +1,42 @@
-<ul>
-{{#each shoppingCart.items as |item|}}
-  <li>{{item.title}} -- {{item.cost}}</li>
-{{else}}
-  <p>Your Shopping Cart is Empty!</p>
-  <p>Start Shopping Above</p>
-{{/each}}
-</ul>
-<section class="price">
-  Total: ${{shoppingCart.totalPrice}}
-  <button {{action 'empty'}}>Empty your Shopping Cart</button>
-</section>
+{{head-title "Pean | Cart"}}
+
+<nav class="results-nav">
+	<div class="nav-wrapper">
+		<a href="/" class="brand-logo">Pean</a>
+		<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+		<ul class="right hide-on-med-and-down">
+			<li>{{#link-to 'index'}} Home {{/link-to}} </li>
+			<li>{{#link-to 'about'}} About {{/link-to}} </li>
+			<li> {{#link-to 'contacts'}} Contact {{/link-to}} </li>
+			<li> {{#link-to 'cart'}} Cart {{/link-to}} </li>
+		</ul>
+		<ul class="side-nav" id="mobile-demo">
+			<li>{{#link-to 'index'}} Home {{/link-to}} </li>
+			<li>{{#link-to 'about'}} About {{/link-to}} </li>
+			<li> {{#link-to 'contacts'}} Contact {{/link-to}} </li>
+			<li> {{#link-to 'cart'}} Cart {{/link-to}} </li>
+		</ul>
+	</div>
+</nav>
+<div class="container">
+	<h2>My Cart {{shoppingCart.items.length}} Items</h2>
+    <h4>Total: ${{shoppingCart.total}} </h4>
+	<a class="waves-effect waves-light red btn" {{action 'emptyCart'}}>Empty Cart</a>
+	{{#each shoppingCart.items as |item|}}
+	<table  class="products-table">
+		<thead>
+			<tr>
+				<th>Product</th>
+				<th>Price</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>{{item.brandedName}}</td>
+				<td>{{item.priceLabel}}</td>
+			</tr>
+			<a class="btn-floating btn-small waves-effect waves-light red" {{action 'remove' item}}><i class="material-icons">delete</i></a>
+		</tbody>
+	</table>
+	{{/each}}
+</div>
